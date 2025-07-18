@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WCA Ganpati Utsav 2025</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    
+    :root {
+      --primary: #d4af37;
+      --secondary: #800000;
+      --accent: #ffd700;
+      --text: #fff8f0;
+      --dark-red: #3a0a0a;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--dark-red), var(--secondary));
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px 20px;
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .wca-logo {
+      font-size: 3em;
+      font-weight: 700;
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+      margin-bottom: 5px;
+    }
+
+    .charaja {
+      font-size: 1.8em;
+      color: var(--primary);
+      margin-top: 0;
+      text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    }
+
+    .title {
+      font-size: 1.5em;
+      margin: 25px 0;
+      line-height: 1.4;
+      color: var(--accent);
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.3);
+      padding: 15px;
+      background: rgba(58, 10, 10, 0.5);
+      border-radius: 10px;
+      border: 1px solid var(--primary);
+    }
+
+    .murti-container {
+      position: relative;
+      margin: 30px auto;
+      width: 250px;
+      height: 250px;
+    }
+
+    .murti {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+      border: 3px solid var(--primary);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    .info-box {
+      background: rgba(58, 10, 10, 0.6);
+      border-radius: 15px;
+      padding: 20px;
+      margin: 30px 0;
+      border: 1px solid var(--primary);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .info-item {
+      margin: 15px 0;
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .info-icon {
+      margin-right: 10px;
+      color: var(--accent);
+      font-size: 1.2em;
+    }
+
+    a.highlight {
+  color: #d6249f;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s;
+  display: inline-block;
+}
+
+a.highlight:hover, a.highlight:focus {
+  color: #fd5949;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+    .date-time {
+      font-size: 1.8em;
+      margin: 25px 0;
+      color: var(--accent);
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 1em;
+      color: var(--primary);
+    }
+
+    /* Decorative elements */
+    .flower {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: radial-gradient(circle, var(--accent) 20%, var(--primary) 70%, transparent 71%);
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: fall linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(-100px) rotate(0deg) scale(0.5);
+        opacity: 0;
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    .diya {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: radial-gradient(circle, var(--accent) 0%, var(--primary) 70%, transparent 71%);
+      border-radius: 50%;
+      filter: blur(5px);
+      animation: flicker 3s ease-in-out infinite alternate;
+      z-index: 1;
+    }
+
+    @keyframes flicker {
+      0%, 100% { opacity: 0.7; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+
+    .border-decoration {
+      position: fixed;
+      width: 100%;
+      height: 30px;
+      background: repeating-linear-gradient(
+        45deg,
+        var(--primary),
+        var(--primary) 10px,
+        var(--secondary) 10px,
+        var(--secondary) 20px
+      );
+      z-index: 3;
+    }
+
+    .top-border {
+      top: 0;
+      left: 0;
+    }
+
+    .bottom-border {
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="border-decoration top-border"></div>
+  
+  <div class="container">
+    <div class="header">
+      <div class="wca-logo">WCA</div>
+      <div class="charaja">ChaRaja</div>
+    </div>
+
+    <div class="title">
+      HERE COMES THE DAY AGAIN TO ENJOY, CELEBRATE, HAVE FUN,<br>
+      MAKE WISHES AND HAVE THEM FULFILLED WITH OUR MOST AWAITED<br>
+      AND DEAR FRIEND GANAPATI BAPPA
+    </div>
+
+    <div class="date-time">
+      21 AUGUST<br>
+      7:00 PM | THURSDAY
+    </div>
+
+    <div class="murti-container">
+      <img src="WhatsApp Image 2025-07-18 at 17.43.16_45c7f55f.jpg" alt="Ganpati Bappa" class="murti" onerror="this.src='https://i.ibb.co/BfrZfGV/bappa-murti.jpg'">
+    </div>
+
+    <div class="info-box">
+      <div class="info-item">
+        <span class="info-icon">📍</span>
+        <span>Vadifalia Police Choki to <span class="highlight">We Can Academy</span></span>
+      </div>
+      <div class="info-item">
+        <span class="info-icon">🎵</span>
+        <span>Special Attractions: <span class="highlight">Kali Dhol</span> & <span class="highlight">DJ Mayank</span></span>
+      </div>
+           <div class="info-item">
+        <span class="info-icon">📸</span>
+        <span>
+          Instagram:
+          <a href="https://instagram.com/we_can_academy" target="_blank" class="highlight">@we_can_academy</a>
+        </span>
+      </div>
+
+    <div class="info-box">
+      <div class="info-item" style="font-size: 1.3em;">
+        <span class="info-icon">✨</span>
+        <span>Bappa says: <span class="highlight">"हम कर सकते हैं, हम करेंगे!"</span></span>
+      </div>
+    </div>
+
+    <div class="footer">
+      Invited By <span class="highlight">WCA FAMILY</span><br>
+      © 2025 We Can Academy. All Rights Reserved.
+    </div>
+  </div>
+
+  <div class="border-decoration bottom-border"></div>
+
+  <!-- Decorative elements -->
+  <script>
+    // Create falling flowers
+    for (let i = 0; i < 30; i++) {
+      const flower = document.createElement('div');
+      flower.className = 'flower';
+      flower.style.left = Math.random() * 100 + 'vw';
+      flower.style.animationDuration = 5 + Math.random() * 10 + 's';
+      flower.style.animationDelay = Math.random() * 5 + 's';
+      flower.style.width = 10 + Math.random() * 20 + 'px';
+      flower.style.height = flower.style.width;
+      document.body.appendChild(flower);
+    }
+
+    // Create diya lights
+    for (let i = 0; i < 15; i++) {
+      const diya = document.createElement('div');
+      diya.className = 'diya';
+      diya.style.left = Math.random() * 100 + 'vw';
+      diya.style.top = Math.random() * 100 + 'vh';
+      diya.style.animationDuration = 2 + Math.random() * 3 + 's';
+      diya.style.animationDelay = Math.random() * 3 + 's';
+      diya.style.width = 20 + Math.random() * 30 + 'px';
+      diya.style.height = diya.style.width;
+      document.body.appendChild(diya);
+    }
+  </script>
+</body>
+</html>
